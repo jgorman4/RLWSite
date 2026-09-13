@@ -106,3 +106,8 @@
 .belief p.scripture {
   line-height: 1.9;
 }
+
+.faith-sidebar ol {
+  list-style: none;
+  padding-left: 0;
+}
