@@ -111,3 +111,60 @@
   list-style: none;
   padding-left: 0;
 }
+/* Responsive leadership portraits. */
+.leadership .leader-grid {
+  grid-template-columns: minmax(0, 1fr);
+}
+.leader-with-photo {
+  display: grid;
+  grid-template-columns: minmax(120px, 180px) minmax(0, 1fr);
+  align-items: start;
+  gap: clamp(24px, 4vw, 48px);
+}
+.leader-photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center 30%;
+  border-radius: 8px;
+  background: var(--sky);
+}
+.james-photo {
+  aspect-ratio: 3 / 4;
+}
+.leader-bio { min-width: 0; }
+.ministry-leaders.ministry-with-photos {
+  display: block;
+}
+.ministry-with-photos > h3 { margin-bottom: 28px; }
+.ministry-portrait-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px;
+}
+.ministry-person {
+  display: grid;
+  grid-template-columns: minmax(95px, 140px) minmax(0, 1fr);
+  align-items: center;
+  gap: 24px;
+}
+.ministry-person h4 {
+  margin: 0 0 8px;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: normal;
+  line-height: 1.35;
+}
+.ministry-person p { color: var(--muted); }
+@media (max-width: 760px) {
+  .ministry-portrait-grid { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 520px) {
+  .leader-with-photo { grid-template-columns: minmax(0, 1fr); gap: 24px; }
+  .james-photo { width: min(100%, 180px); }
+  .ministry-person { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .ministry-person .leader-photo { width: min(100%, 220px); }
+}
