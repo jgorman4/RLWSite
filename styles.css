@@ -7,3 +7,45 @@
 @media(max-width:1000px){.container{width:calc(100% - 56px)}nav{gap:16px}.brand{width:220px}.hero-grid{gap:35px}.two-column,.sermon-inner{gap:50px}.ministry-card{padding:23px}.actions{gap:20px}.sunday-main h2{font-size:54px}}
 @media(max-width:760px){.container{width:calc(100% - 40px)}.header-inner{flex-direction:column;gap:20px;padding-block:22px}nav{flex-wrap:wrap;justify-content:center;gap:12px 21px;font-size:12px}.nav-visit{padding:7px 12px}.hero{padding:48px 0}.hero-grid,.two-column,.sermon-inner{grid-template-columns:1fr;gap:40px}h1{font-size:clamp(46px,9vw,66px)}.hero-copy>.eyebrow{font-size:9px}.sunday-card{max-width:460px;width:100%;min-height:450px;margin-inline:auto}.card-top{margin-top:60px}.section{padding:60px 0}.section-heading{display:block}.section-heading>.text-link{display:inline-block;margin-top:22px}.ministry-grid{grid-template-columns:1fr}.ministry-card{min-height:260px;padding:28px}.ministry-card h3{margin-top:24px}.footer-top{flex-direction:column;align-items:flex-start;gap:22px}.footer-bottom{flex-wrap:wrap}.actions{flex-wrap:wrap}.intro{font-size:16px}.mission-copy{font-size:16px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Expanded church content */
+.site-header nav{flex-wrap:wrap;justify-content:flex-end}
+.card-bottom a{font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.card-top>span:last-child{font-size:9px}
+.section-intro{max-width:680px;color:var(--muted);margin-bottom:36px}
+.leader-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+.leader-card{border-top:3px solid var(--teal);padding-top:26px}
+.leader-card h3{margin-bottom:24px;font-size:30px}
+.leader-card p:not(.eyebrow){font-size:15px;color:var(--muted)}
+.leader-card .eyebrow{font-size:10px;margin-bottom:13px}
+.ministry-leaders{margin-top:48px;padding-top:28px;border-top:1px solid var(--line);display:flex;align-items:center;gap:55px}
+.ministry-leaders h3{font-size:22px}.ministry-leaders p{margin:0;font-size:14px}.ministry-leaders span{display:block;color:var(--muted);font-size:12px}
+.belief-banner{padding:55px 0;background:var(--sky);border-block:1px solid var(--line)}
+.belief-banner>.container{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.belief-banner h2{font-size:38px}.belief-banner p:not(.eyebrow){max-width:570px;margin-top:16px;color:var(--muted)}.belief-banner .button{flex-shrink:0}
+.ministry-details{background:white;border-top:1px solid var(--line)}
+.ministry-detail-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:44px 36px}
+.ministry-detail-grid article{border-top:1px solid var(--line);padding-top:26px}
+.ministry-detail-grid h3{font-size:25px;margin-bottom:16px}.ministry-detail-grid p{font-size:15px;color:var(--muted)}
+.ministry-invitation{margin-top:45px;padding:24px;background:var(--sky);font-size:14px}.ministry-invitation a{text-decoration:underline;text-underline-offset:3px}
+.giving{background:white;border-bottom:1px solid var(--line)}.giving .button{margin-top:26px}.contact-email{margin:20px 0 12px;font-size:14px;overflow-wrap:anywhere}.footer-links{display:flex;gap:24px}
+/* Faith reading layout: native anchors work without JavaScript. */
+.faith-intro{padding-block:72px 54px}.faith-intro h1{font-size:clamp(44px,6vw,72px)}
+.faith-preface{max-width:850px;color:var(--muted);font-size:17px;margin-top:28px;line-height:1.8}
+.faith-layout{display:grid;grid-template-columns:285px minmax(0,1fr);gap:70px;align-items:start;padding-bottom:60px}
+.faith-sidebar{position:sticky;top:24px;background:white;border:1px solid var(--line);padding:24px 20px;max-height:calc(100vh - 48px);overflow:auto;scrollbar-width:thin}
+.faith-sidebar h2{font-size:22px;letter-spacing:-.025em}.faith-sidebar>p{font-size:12px;color:var(--muted);margin-top:10px;margin-bottom:20px}
+.faith-sidebar nav{display:block}.faith-sidebar ol{list-style:none;margin:0;padding:0}.faith-sidebar li+li{border-top:1px solid #edf0ed}
+.faith-sidebar a{display:flex;align-items:baseline;gap:12px;padding:9px 5px;font-size:12px;line-height:1.5;font-weight:500;border-radius:2px}
+.faith-sidebar a span{font-size:10px;color:var(--deep);min-width:17px;font-weight:700}.faith-sidebar a:hover{background:var(--sky);text-decoration:none}
+.belief{padding:38px 40px;margin-bottom:24px;background:white;border:1px solid var(--line);border-top:3px solid var(--teal);scroll-margin-top:24px}
+.belief h2{font-size:34px;margin-bottom:26px;line-height:1.2;letter-spacing:-.035em;overflow-wrap:break-word}
+.belief p:not(.eyebrow){font-size:16px;line-height:1.85;color:#46565b}.belief .eyebrow{font-size:10px;margin-bottom:15px}
+.belief p.scripture{background:var(--sky);border-left:3px solid var(--teal);padding:18px 20px;font-size:13px;line-height:1.8;margin-top:24px;color:#334d53}
+.belief:target{border-color:var(--deep);box-shadow:0 0 0 2px #21677915}.back-top{display:inline-block;margin-top:25px;font-size:12px;font-weight:700;color:var(--deep);text-decoration:underline;text-underline-offset:4px}
+.faith-question{border-top:1px solid var(--line);padding-block:50px 70px}.faith-question h2{font-size:34px}.faith-question p{margin:18px 0 26px;color:var(--muted)}
+[aria-current="page"]{color:var(--deep);text-decoration:underline;text-underline-offset:7px}
+@media(max-width:1000px){.faith-layout{grid-template-columns:235px minmax(0,1fr);gap:28px}.belief{padding:30px}.belief-banner>.container{align-items:flex-start;flex-direction:column}.leader-grid{gap:24px}.ministry-detail-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){.site-header nav{justify-content:center}.leader-grid{grid-template-columns:1fr;gap:35px}.ministry-leaders{flex-wrap:wrap;gap:22px 35px}.ministry-leaders h3{width:100%}.ministry-detail-grid{grid-template-columns:1fr;gap:30px}.faith-intro{padding-block:45px 35px}.faith-preface{font-size:16px}.faith-layout{grid-template-columns:1fr;gap:30px}.faith-sidebar{position:static;max-height:none;padding:22px}.faith-sidebar ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 15px}.faith-sidebar a{font-size:11px}.belief{padding:28px 23px}.belief h2{font-size:29px}.belief p:not(.eyebrow){font-size:15px}.belief p.scripture{font-size:12px;padding:15px}.faith-question h2{font-size:30px}.belief-banner h2{font-size:32px}}
+@media(max-width:380px){.faith-sidebar ol{grid-template-columns:1fr}}
+@media print{.site-header,.faith-sidebar,footer,.back-top,.faith-question,.skip-link{display:none}.faith-layout{display:block;width:100%}.belief{break-inside:auto;border:0;padding:20px 0}.belief h2{break-after:avoid}.faith-intro{padding:20px 0}body{background:white;color:black}}
