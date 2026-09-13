@@ -168,3 +168,47 @@
   .ministry-person { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .ministry-person .leader-photo { width: min(100%, 220px); }
 }
+
+/* Floating navigation for the Statement of Faith page. */
+.faith-page {
+  padding-bottom: calc(88px + env(safe-area-inset-bottom, 0px));
+}
+.floating-back-top {
+  position: fixed;
+  right: calc(24px + env(safe-area-inset-right, 0px));
+  bottom: calc(24px + env(safe-area-inset-bottom, 0px));
+  z-index: 50;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  background: var(--deep);
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.18);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.floating-back-top:hover {
+  background: var(--ink);
+  text-decoration: none;
+}
+.floating-back-top:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+  box-shadow: 0 0 0 4px #fff;
+}
+@media (max-width: 760px) {
+  .floating-back-top {
+    right: calc(16px + env(safe-area-inset-right, 0px));
+    bottom: calc(16px + env(safe-area-inset-bottom, 0px));
+  }
+}
+@media print {
+  .floating-back-top { display: none; }
+  .faith-page { padding-bottom: 0; }
+}
