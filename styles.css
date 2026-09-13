@@ -49,3 +49,60 @@
 @media(max-width:760px){.site-header nav{justify-content:center}.leader-grid{grid-template-columns:1fr;gap:35px}.ministry-leaders{flex-wrap:wrap;gap:22px 35px}.ministry-leaders h3{width:100%}.ministry-detail-grid{grid-template-columns:1fr;gap:30px}.faith-intro{padding-block:45px 35px}.faith-preface{font-size:16px}.faith-layout{grid-template-columns:1fr;gap:30px}.faith-sidebar{position:static;max-height:none;padding:22px}.faith-sidebar ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 15px}.faith-sidebar a{font-size:11px}.belief{padding:28px 23px}.belief h2{font-size:29px}.belief p:not(.eyebrow){font-size:15px}.belief p.scripture{font-size:12px;padding:15px}.faith-question h2{font-size:30px}.belief-banner h2{font-size:32px}}
 @media(max-width:380px){.faith-sidebar ol{grid-template-columns:1fr}}
 @media print{.site-header,.faith-sidebar,footer,.back-top,.faith-question,.skip-link{display:none}.faith-layout{display:block;width:100%}.belief{break-inside:auto;border:0;padding:20px 0}.belief h2{break-after:avoid}.faith-intro{padding:20px 0}body{background:white;color:black}}
+
+/* Comfortable spacing for leadership and long-form beliefs. */
+.leadership h2,
+.leadership h3,
+.faith-page h1,
+.faith-page h2,
+.belief-banner h2 {
+  letter-spacing: normal;
+  word-spacing: 0.035em;
+  line-height: 1.25;
+}
+
+.leader-grid {
+  grid-template-columns: minmax(0, 760px);
+}
+
+.leader-card {
+  padding-top: 30px;
+}
+
+.leader-card p:not(.eyebrow),
+.faith-preface,
+.belief p:not(.eyebrow) {
+  letter-spacing: normal;
+  word-spacing: 0.025em;
+  line-height: 1.85;
+  text-align: left;
+}
+
+.leader-card p:not(.eyebrow) {
+  font-size: 16px;
+  max-width: 70ch;
+}
+
+.leader-card p + p,
+.belief p + p {
+  margin-top: 22px;
+}
+
+.leadership .eyebrow,
+.belief .eyebrow {
+  letter-spacing: 0.09em;
+  word-spacing: 0.12em;
+  line-height: 1.6;
+}
+
+.faith-sidebar a {
+  display: block;
+  padding: 11px 7px;
+  letter-spacing: normal;
+  word-spacing: 0.025em;
+  line-height: 1.6;
+}
+
+.belief p.scripture {
+  line-height: 1.9;
+}
