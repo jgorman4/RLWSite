@@ -1,5 +1,5 @@
 /* Native dialog provides focus containment, Escape dismissal and inert background. */
-.welcome-splash{width:min(960px,calc(100% - 32px));max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);padding:0;border:0;border-radius:12px;background:var(--white);color:var(--ink);overflow:auto;box-shadow:0 20px 70px #0005}
+.welcome-splash{width:min(800px,calc(100% - 32px));max-height:calc(100vh - 32px);max-height:calc(100dvh - 32px);padding:0;border:0;border-radius:12px;background:var(--white);color:var(--ink);overflow:auto;box-shadow:0 20px 70px #0005}
 .welcome-splash::backdrop{background:rgb(15 26 30 / 65%)}
 .welcome-splash-image{width:100%;height:auto}
 .welcome-splash-controls{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;position:sticky;bottom:0;background:var(--white);border-top:1px solid var(--line)}
